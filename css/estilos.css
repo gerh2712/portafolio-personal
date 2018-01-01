@@ -80,7 +80,8 @@ header .contenedor-texto .texto h2 {
     overflow: visible;
 }
 
-    .main .acerca-de .foto img {    vertical-align: top;
+.main .acerca-de .foto img {
+    vertical-align: top;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.2);
 }
@@ -315,5 +316,27 @@ footer .redes-sociales .github:hover {
     footer .contacto .formulario input[type="text"],
     footer .contacto .formulario input[type="email"] {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header .menu {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    header .menu a {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    header .contenedor-texto {
+        margin-top: 20px;
     }
 }
